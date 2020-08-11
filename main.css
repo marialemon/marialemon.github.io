@@ -1,4 +1,137 @@
+/*
+Color palette:
+
+amarillo #FFCC00
+azul #1D2F6F
+negro #141414
+gris #EEF0F2
+
+*/
+
+a {
+  text-decoration: none;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: blue
+  font-family: "Mulish", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 18pt;
+}
+
+header {
+  align-items: center; /* alinear verticalmente */
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+header a {
+  color: #141414;
+}
+
+#logo {
+  font-weight: 500;
+  padding: 0 1em;
+  margin-right: auto;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.dot {
+  position: absolute;
+  top: 33px;
+  margin-left: -6px;
+  z-index: -1;
+}
+
+
+
+.dotlogo {
+  position: absolute;
+  top: 33px;
+  left: 149px;
+}
+
+.o {
+  letter-spacing: 0.6em;
+}
+
+/*FIN DE LA NAV*/
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 8.4em;
+}
+
+.aboutme {
+  background-color: #ffcc00;
+  border-radius: 0 0 200px 0;
+  box-shadow: 0 0 10px rgba(14, 14, 14, 0.3);
+  height: 185px;
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  width: 60%;
+  min-width: 490px;
+}
+
+.hola {
+  display: block;
+  position: absolute;
+  top: 111px;
+}
+
+.foto{
+    background: url(/img/marialemonfoto1.png) no-repeat center;
+    background-size: cover;
+    border-radius: 200px 0 0 0;
+    box-shadow: 0 0 10px rgba(14, 14, 14, 0.3);
+    height: 350px;
+    min-width: 320px;
+    width: 40%;
+}
+
+
+
+
+/* BOTONES */
+
+button {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(14, 14, 14, 0.3);
+  font-weight: 500;
+  overflow: visible;
+  padding: 0.4em 0.7em;
+}
+
+#contact {
+  background-color: #1d2f6f;
+  margin-right: 30px;
+}
+
+#contact a {
+  color: white;
+}
+
+#work a {
+  color: #141414;
+}
+
+
+
+
+@media only screen and (max-width: 930px) {
+
+    body{
+        background-color: #1d2f6f;
+    }
+
 }
